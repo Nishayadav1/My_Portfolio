@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>My Porfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header -->
-     <header class="header">
-        <a href="#" class="logo">Portfolio</a> 
+<!-- header section -- -->
+     <header class="header" id="header">
+        <a href="#" class="logo">My Portfolio</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="" class="active">Home</a>
-            <a href="">About</a>
-            <a href="">Service</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+        <i class="fa-solid fa-times" id="close-icon" style="display: none;"></i>
+    
+        <nav class="navbar" id="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-     </header>
+    </header>
 
      <!-- Home section desihn -->
       <section class="home" id="home">
@@ -28,14 +29,15 @@
             <h3>Hi, Myself</h3>
             <h1>Nisha</h1>
             <h3>I'm a <span>Frontend Developer</span></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id praesentium inventore, tempora excepturi quidem unde dolores, ex quos laborum quo at doloribus itaque quas? Iste, ullam vitae? Minus, veniam velit?</p>
+            <p>Aspiring Frontend developer with a solid understanding of HTML, CSS, and JavaScript. Eager to apply my skills in building responsive and
+                user-friendly websites. Seeking an entry-level position where I can grow and contribute to innovative web projects within a collaborative team.</p>
             <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Nishayadav1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nisha-72b986249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.codechef.com/users/nishayadav22" target="_blank"><i class="fa-solid fa-code"></i></a>
+                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/1psa6sucVl_GBG-KYMwJQih8XQgfV1Q59/view?usp=drive_link" target="_blank" class="btn">Download CV  <i class="fa-solid fa-download"></i></a>
         </div>
 
         <div class="home-img">
@@ -52,8 +54,8 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum! Totam modi sint vero. Sit velit nobis, ex incidunt quis adipisci officia! Ullam odit deserunt atque amet in, iusto cupiditate!</p>
-            <a href="#" class="btn">Read More</a>
+            <p id="aboutpara">My name is Nisha, and I am from Delhi. Currently, I am pursuing a Bachelor of Commerce, and alongside that, I am enrolled in a diploma program at NavGurukul. NavGurukul is a residential course where, I have knowledge of programming languages such as<span id="dots">...</span><span id="more"> Python, HTML, CSS, JavaScript, ReactJs and SQL. Using HTML, CSS, and JavaScript, I have developed projects like an eCommerce website and a calculator. Additionally, I participate in weekly competitive contests on platforms like CodeChef and AtCoder, which help me improve my logical skills.</span></p>
+            <button class="btn" id="readmore"  onclick="myFunction()">Read More</button>
         </div>
      </section>
 
@@ -65,12 +67,12 @@
     
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nesciunt vel. Libero reprehenderit est, magnam voluptates vel, ut, ex reiciendis harum soluta sapiente et. Similique libero amet impedit asperiores ad?</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Frontend Developer</h3>
+                <p>As a beginner frontend developer, you can offer services like creating simple, responsive websites, implementing basic UI designs, optimizing performance, ensuring mobile compatibility, and learning to integrate front-end with backend APIs.</p>
+                <a href="" class="btn">Read More</a>
             </div>
     
-            <div class="services-box">
+            <!-- <div class="services-box">
                 <i class="fa-solid fa-palette"></i>
                 <h3>UI/UX Designing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nesciunt vel. Libero reprehenderit est, magnam voluptates vel, ut, ex reiciendis harum soluta sapiente et. Similique libero amet impedit asperiores ad?</p>
@@ -82,95 +84,88 @@
                 <h3>App Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nesciunt vel. Libero reprehenderit est, magnam voluptates vel, ut, ex reiciendis harum soluta sapiente et. Similique libero amet impedit asperiores ad?</p>
                 <a href="#" class="btn">Read More</a>
-            </div>
+            </div> -->
     
         </div>
     </section>
     
 
     <!--porfolio section  -->
-    <section class="portfolio" id="portfolio">
+    <section class="projects" id="projects">
         <h2 class="heading">latest <span>Projects</span></h2>
     
-        <div class="portfolio-container">
-            <div class="portfolio-box">
+        <div class="projects-container">
+            <div class="projects-box">
                 <img src="/Asstes/img1.png" alt="project1...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Food Resaurant</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>
+                    <a href="https://github.com/Nishayadav1/Restaurant_Website"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
     
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img5.png" alt="project2...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Flower Shop</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/Flower-Shop"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
     
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img8.png" alt="project3...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Age Calculator</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/Age-Calculator"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
     
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img4.png" alt="project4...">
-                <div class="portfolio-layer">
-                    <h4>Video</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="projects-layer">
+                    <h4>15DOM Projects</h4>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/15_mini_DOM_projects"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
     
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img2.png" alt="project5...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Looka Brand</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/Looka_Home_page"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
     
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img6.png" alt="project6...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Book Library</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/Library_Website"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img7.png" alt="project6...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Calculator</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/Calculator"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img3.png" alt="project6...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Instagram Page</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    <a href="https://github.com/Nishayadav1/instagrampage"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="projects-box">
                 <img src="/Asstes/img9.png" alt="project6...">
-                <div class="portfolio-layer">
+                <div class="projects-layer">
                     <h4>Float, Position flex</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error?</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Try it out</p>                    
+                   <a href="https://github.com/Nishayadav1/FLOAT_POSITION_FLEX"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -203,13 +198,9 @@
     </div>
 
     <div class="footer-iconTop">
-        <a href="#hone"><i class="fa-solid fa-angle-up"></i></a>
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
     </div>
  </footer>
-
-
-
-
-
+ <script src="script.js"></script>
 </body>
 </html>
