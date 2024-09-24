@@ -22,8 +22,8 @@ Welcome to my personal portfolio website, showcasing my skills, projects, and co
 3. **About Me**: 
    - Provides a more detailed description of my background, including educational and technical skills.
 
-4. **Services**: 
-   - Lists the services I offer as a frontend developer with a brief description.
+4. **Achievement**: 
+   - Lists the of my Achievement in programing.
 
 5. **Projects**: 
    - Displays a gallery of my latest projects with preview images and links to their respective GitHub repositories.
